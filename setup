@@ -1,0 +1,36 @@
+DEFAULT_USER="$USER"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(history command_execution_time)
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
+ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
+
+plugins=(
+  brew
+  git
+  gradle
+  ng
+  npm
+  yarn
+  zsh-autosuggestions
+  osx
+  sdkman
+  history-substring-search
+)
+
+alias x="exit"
+alias sz="source ~/.zshrc"
+alias hg="history | grep "
+alias ll="ls -alh"
+alias rm="rm -i"
+alias c="code"
+alias rm=""
+
+
+#Include Z
+if command -v brew >/dev/null 2>&1; then
+  # Load rupa's z if installed
+  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi

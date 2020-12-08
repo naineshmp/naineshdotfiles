@@ -1,6 +1,9 @@
 https://github.com/Eun/DisableMonitor
 https://dev.to/equiman/iterm2--oh-my-zsh--powerlevel9k-best-terminal-combination-for-geeks-58l5
 
+https://dev.to/equiman/setup-macos-for-development-3kc2
+
+
 ```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap homebrew/cask-fonts
